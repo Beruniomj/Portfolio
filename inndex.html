@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 20px 8%;
+      background: #172235;
+    }
+
+    nav a {
+      color: #dce6f5;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #70e1c1;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .hero {
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      color: #70e1c1;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4rem);
+      margin: 10px 0;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .muted {
+      color: #b7c3d6;
+      max-width: 650px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #70e1c1;
+      color: #101827;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px 8px 0 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #1b2940;
+      padding: 22px;
+      border: 1px solid #34445d;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #70e1c1;
+    }
+
+    footer {
+      padding: 25px 8%;
+      background: #172235;
+      color: #b7c3d6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MY PORTFOLIO</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <p class="tag">STUDENT DEVELOPER</p>
+    <h1>Hi, I'm Milca Joy!</h1>
+    <h2>Welcome to my portfolio.</h2>
+    <p class="muted">
+      I am a student learning software development,
+      programming, and technology. I enjoy learning
+      new skills and creating useful projects.
+    </p>
+    <div>
+      <a class="button" href="#projects">Explore My Projects</a>
+      <a class="button" href="#about">About Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="tag">GET TO KNOW ME</p>
+    <h2>About Me</h2>
+    <p class="muted">
+      I am a student who is developing technical skills
+      and learning how technology can solve problems.
+      Through school activities and personal projects,
+      I hope to improve my creativity, teamwork,
+      and problem-solving abilities.
+    </p>
+  </section>
+
+  <section id="projects">
+    <p class="tag">MY WORK</p>
+    <h2>Featured Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project Nexus</h3>
+        <p>
+          A software design project focused on planning,
+          teamwork, version control, and development.
+        </p>
+        <p>Tools: GitHub and project documentation</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>
+          Add a description of another school project,
+          what it does, and what you learned.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>
+          Showcase another real project, prototype,
+          or programming activity you have completed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="tag">WHAT I'M LEARNING</p>
+    <h2>My Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>HTML and CSS</h3>
+        <p>Learning to structure and style websites.</p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>Learning repositories, commits, and branches.</p>
+      </div>
+      <div class="card">
+        <h3>Teamwork</h3>
+        <p>Practicing communication and collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="tag">LET'S CONNECT</p>
+    <h2>Thank you for visiting!</h2>
+    <p class="muted">
+      I am always learning and working to improve
+      my skills through new projects.
+    </p>
+    <a class="button"
+       href="https://github.com/Beruniomj">
+      Visit My GitHub
+    </a>
+  </section>
+
+  <footer>
+    <p>Designed and built by Milca Joy.</p>
+    <p>Student Portfolio | 2026</p>
+  </footer>
+
+</body>
+</html>
