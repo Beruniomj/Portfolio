@@ -4,215 +4,262 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #101827;
-      color: #f5f7fb;
-      line-height: 1.6;
-    }
+  <title>Milca Joy | My Portfolio</title>
+  <meta name="description"
+        content="Milca Joy's student portfolio featuring projects, skills, and software development journey.">
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding: 20px 8%;
-      background: #172235;
-    }
-
-    nav a {
-      color: #dce6f5;
-      text-decoration: none;
-      margin-right: 12px;
-    }
-
-    .logo {
-      font-weight: bold;
-      color: #70e1c1;
-    }
-
-    section {
-      padding: 65px 8%;
-    }
-
-    .hero {
-      min-height: 340px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .tag {
-      color: #70e1c1;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 4rem);
-      margin: 10px 0;
-      line-height: 1.15;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    .muted {
-      color: #b7c3d6;
-      max-width: 650px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #70e1c1;
-      color: #101827;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 8px 8px 0 0;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: #1b2940;
-      padding: 22px;
-      border: 1px solid #34445d;
-      border-radius: 14px;
-    }
-
-    .card h3 {
-      color: #70e1c1;
-    }
-
-    footer {
-      padding: 25px 8%;
-      background: #172235;
-      color: #b7c3d6;
-    }
-  </style>
+  <!-- Connect external CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- NAVIGATION -->
   <nav>
-    <div class="logo">MY PORTFOLIO</div>
-    <div>
+    <a class="logo" href="#home">MILCA JOY.</a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      aria-label="Toggle navigation"
+      type="button">
+      ☰ Menu
+    </button>
+
+    <div class="nav-links" id="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
+
+    <button class="button" id="theme-toggle" type="button">
+      ☀️ Theme
+    </button>
   </nav>
 
+  <!-- HOME / HERO -->
   <section class="hero" id="home">
-    <p class="tag">STUDENT DEVELOPER</p>
-    <h1>Hi, I'm Milca Joy!</h1>
-    <h2>Welcome to my portfolio.</h2>
+    <p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hi, I'm <span>Milca Joy!</span></h1>
+
+    <h2>Student | Aspiring Developer</h2>
+
     <p class="muted">
-      I am a student learning software development,
-      programming, and technology. I enjoy learning
-      new skills and creating useful projects.
+      I am a student passionate about learning technology,
+      software development, and programming. I enjoy
+      exploring new ideas, developing my skills, and
+      creating projects that help me grow as a learner.
     </p>
-    <div>
-      <a class="button" href="#projects">Explore My Projects</a>
-      <a class="button" href="#about">About Me</a>
+
+    <div class="hero-buttons">
+      <a class="button" href="#projects">
+        Explore My Projects →
+      </a>
+
+      <a class="button secondary" href="#about">
+        About Me
+      </a>
+    </div>
+
+    <div class="hero-note">
+      <span class="status-dot"></span>
+      Always learning. Always improving.
     </div>
   </section>
 
+  <!-- ABOUT ME -->
   <section id="about">
     <p class="tag">GET TO KNOW ME</p>
+
     <h2>About Me</h2>
+
     <p class="muted">
-      I am a student who is developing technical skills
-      and learning how technology can solve problems.
-      Through school activities and personal projects,
-      I hope to improve my creativity, teamwork,
-      and problem-solving abilities.
+      Hello! My name is Milca Joy. I am a student
+      developing my knowledge of programming and
+      modern technology. I believe that learning
+      requires patience, curiosity, and practice.
     </p>
+
+    <p class="muted">
+      Through school activities and personal projects,
+      I want to strengthen my technical knowledge,
+      creativity, teamwork, and problem-solving skills.
+      My portfolio documents my progress and the things
+      I learn along the way.
+    </p>
+
+    <div class="about-highlight">
+      <h3>My Goal</h3>
+      <p>
+        To become more confident in software development
+        and build useful projects while continuously
+        learning new technologies.
+      </p>
+    </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
-    <p class="tag">MY WORK</p>
+    <p class="tag">WHAT I'VE BEEN WORKING ON</p>
+
     <h2>Featured Projects</h2>
+
+    <p class="muted">
+      Here are some projects and learning activities
+      that represent my development journey.
+    </p>
+
     <div class="cards">
-      <div class="card">
+
+      <article class="card">
+        <div class="project-number">01 / SCHOOL PROJECT</div>
+
         <h3>Project Nexus</h3>
+
         <p>
-          A software design project focused on planning,
-          teamwork, version control, and development.
+          A software design project focused on project
+          planning, teamwork, version control, and
+          software development using GitHub.
         </p>
-        <p>Tools: GitHub and project documentation</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
+
+        <div class="project-tags">
+          <span>GitHub</span>
+          <span>Documentation</span>
+          <span>Collaboration</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="project-number">02 / LEARNING</div>
+
+        <h3>My First Website</h3>
+
         <p>
-          Add a description of another school project,
-          what it does, and what you learned.
+          A personal website created to practice HTML,
+          CSS, page layouts, and responsive web design.
         </p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Web Design</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="project-number">03 / FUTURE PROJECT</div>
+
+        <h3>More Coming Soon</h3>
+
         <p>
-          Showcase another real project, prototype,
-          or programming activity you have completed.
+          This section will showcase another project
+          as I gain more experience and complete new
+          school or personal activities.
         </p>
-      </div>
+
+        <div class="project-tags">
+          <span>Learning</span>
+          <span>Growth</span>
+        </div>
+      </article>
+
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
-    <p class="tag">WHAT I'M LEARNING</p>
-    <h2>My Skills</h2>
+    <p class="tag">MY LEARNING JOURNEY</p>
+
+    <h2>Skills & Interests</h2>
+
+    <p class="muted">
+      These are the areas I am learning and developing.
+    </p>
+
     <div class="cards">
-      <div class="card">
-        <h3>HTML and CSS</h3>
-        <p>Learning to structure and style websites.</p>
-      </div>
-      <div class="card">
+
+      <article class="card">
+        <div class="skill-icon">⌘</div>
+        <h3>HTML</h3>
+        <p>
+          Learning to organize website content using
+          headings, sections, links, and other elements.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="skill-icon">✦</div>
+        <h3>CSS</h3>
+        <p>
+          Learning to style websites with colors,
+          spacing, layouts, and responsive designs.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="skill-icon">⌘</div>
         <h3>GitHub</h3>
-        <p>Learning repositories, commits, and branches.</p>
-      </div>
-      <div class="card">
+        <p>
+          Learning repositories, commits, version
+          control, and project collaboration.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="skill-icon">✧</div>
         <h3>Teamwork</h3>
-        <p>Practicing communication and collaboration.</p>
-      </div>
+        <p>
+          Practicing communication, cooperation,
+          and problem-solving through school activities.
+        </p>
+      </article>
+
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <p class="tag">LET'S CONNECT</p>
-    <h2>Thank you for visiting!</h2>
+
+    <h2>Thanks for visiting!</h2>
+
     <p class="muted">
-      I am always learning and working to improve
-      my skills through new projects.
+      This portfolio represents my journey as a student
+      and aspiring developer. I look forward to learning
+      more, improving my skills, and creating new projects.
     </p>
-    <a class="button"
-       href="https://github.com/Beruniomj">
-      Visit My GitHub
+
+    <a
+      class="button"
+      href="https://github.com/Beruniomj"
+      target="_blank"
+      rel="noopener noreferrer">
+      Visit My GitHub ↗
     </a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>Designed and built by Milca Joy.</p>
-    <p>Student Portfolio | 2026</p>
+    <p>
+      Designed and built by <strong>Milca Joy</strong>.
+    </p>
+
+    <p>
+      Student Portfolio ·
+      <span id="current-year">2026</span>
+    </p>
+
+    <a href="#home">Back to top ↑</a>
   </footer>
+
+  <!-- Connect JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>
